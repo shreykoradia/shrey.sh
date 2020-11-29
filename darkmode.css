@@ -1,0 +1,89 @@
+/*the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+ }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #548B89;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #548B89;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+a:link {
+  color: #FFB6C1;
+  background-color:transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#FFB6C1;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#333348 ;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#div1:hover{
+   
+	background:linear-gradient(to right top, #d16ba5, #b76caa, #9c6cab, #816ca7, #696a9e, #5a71a3, #4b77a6, #3c7da6, #2190b4, #00a2bc, #00b5be, #1fc6bb);
+}
+
+#foot{
+	position: fixed;
+	bottom : 10px;
+	width: 50%;
+     
+}
+#foot:hover{
+	background:linear-gradient(to right, #7f0048, #921937, #9c3526, #9c5114, #946b06, #867b13, #778928, #649642, #509c5b, #3ca174, #2aa48b, #25a79f);
+	color : cyan;
+}
